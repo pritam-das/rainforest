@@ -5,7 +5,7 @@
 <ul>
   <li><%= link_to "Name: #{p.name}", product_path(p) %> </li>
   <li>Description: <%= p.description %></li>
-  <li>Price: <%= p.price_in_cents %></li>
+  <li>Price: $<%= p.formatted_price %></li>
 </ul>
 <% end %>
 </div>
