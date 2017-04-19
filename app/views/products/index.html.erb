@@ -1,0 +1,11 @@
+<h1>Products</h1>
+<div>
+  <%= link_to 'Create a new product', new_product_url %>
+<% @products.each do |p| %>
+<ul>
+  <li><%= link_to "Name: #{p.name}", product_path(p) %> </li>
+  <li>Description: <%= p.description %></li>
+  <li>Price: <%= p.price_in_cents %></li>
+</ul>
+<% end %>
+</div>
