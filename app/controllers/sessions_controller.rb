@@ -9,7 +9,7 @@ class SessionsController < ApplicationController
       flash[:notice] = 'Logged in!'
       redirect_to products_url
     else
-      flash.now[:alert] = 'Incorrect combination of email and password, try again!'
+      flash.now[:alert] = " Incorrect combination of email and password, try again! "
       render :new
     end
   end
